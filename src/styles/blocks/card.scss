@@ -4,6 +4,8 @@
   height: $card-height;
   border: 1px solid $background-color;
   border-radius: 5px;
+  transform-origin: center;
+  will-change: transform;
 
   @include hover(transform, scale(1.2));
 
@@ -25,8 +27,9 @@
     letter-spacing: 0%;
     color: $main-text-color;
     margin-top: 40px;
+    transition: color $transition-duration;
   }
-  
+
   &:hover .card__title {
     color: $card-title-hover;
   }
@@ -93,6 +96,9 @@
     text-align: center;
     margin-top: 16px;
     box-sizing: border-box;
+    transition:
+      background-color $transition-duration,
+      color $transition-duration;
 
     &:hover {
       color: $button-text-color;

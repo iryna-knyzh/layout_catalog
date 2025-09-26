@@ -2,9 +2,9 @@
   --column-count: 1;
 
   display: grid;
-  grid-template-columns: repeat(var(--column-count), 200px);
-  gap: 46px 48px;
-  padding: 50px 45px;
+  grid-template-columns: repeat(var(--column-count), $card-width);
+  gap: $grid-gap-horizontal $grid-gap-vertical;
+  padding: $catalog-padding-vertical $catalog-padding-horizontal;
   justify-content: center;
 }
 

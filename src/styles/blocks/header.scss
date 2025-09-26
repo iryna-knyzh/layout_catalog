@@ -35,6 +35,7 @@
       height: $header-height;
       display: block;
       text-align: center;
+      transition: color $transition-duration;
     }
 
     &-link.is-active::after {
